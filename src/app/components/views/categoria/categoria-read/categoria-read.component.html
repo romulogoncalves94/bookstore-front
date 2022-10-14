@@ -2,7 +2,9 @@
     <div class="title">
         <h1>CATEGORIAS</h1>
     </div>
-    <button class="mat-elevation-z8" mat-flat-button color="primary">+ CATEGORIA</button>
+
+    <button class="mat-elevation-z8" (click)="navegarParaCategoriaCreate()" mat-flat-button color="primary">+ CATEGORIA</button>
+
     <div class="mat-elevation-z8 content-table">
         <table class="table" mat-table [dataSource]="categorias">
             <ng-container matColumnDef="id">
